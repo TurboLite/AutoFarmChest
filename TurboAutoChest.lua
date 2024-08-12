@@ -181,11 +181,11 @@ local AllowRunServiceBind = Instance.new("BindableFunction")
 
 function AllowRunServiceBind.OnInvoke(args)
 
-    if args == "Enable" then
+    if args == "Bật" then
 
         AllowRunService = true
 
-    elseif args == "Disable" then
+    elseif args == "Tắt" then
 
         AllowRunService = false
 
@@ -195,19 +195,19 @@ function AllowRunServiceBind.OnInvoke(args)
 
     CoreGui:SetCore("SendNotification", {
 
-        Title = "Turbo Auto Chest",
+        Title = "Auto Farm Gương",
 
-        Text = "discord.gg/zKA8VNHzME",
+        Text = "By: Turbo Lite",
 
-        Icon = "rbxthumb://type=Asset&id=18918956205&w=150&h=150",
+        Icon = "rbxthumb://type=Asset&id=18919385616&w=150&h=150",
 
         Duration = math.huge,
 
         Callback = AllowRunServiceBind,
 
-        Button1 = "Enable",
+        Button1 = "Bật",
 
-        Button2 = "Disable",
+        Button2 = "Tắt",
 
     })
 
@@ -242,19 +242,19 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
 
-    Title = "Turbo Auto Chest",
+    Title = "Auto Farm Gương",
 
-    Text = "discord.gg/zKA8VNHzME",
+    Text = "By: Turbo Lite",
 
-    Icon = "rbxthumb://type=Asset&id=18918956205&w=150&h=150",
+    Icon = "rbxthumb://type=Asset&id=18919385616&w=150&h=150",
 
     Duration = math.huge,
 
     Callback = AllowRunServiceBind,
 
-    Button1 = "Enable",
+    Button1 = "Bật",
 
-    Button2 = "Disable",
+    Button2 = "Tắt",
 
 })
 
